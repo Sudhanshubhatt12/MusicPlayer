@@ -1,0 +1,102 @@
+body {
+
+   background: url(bg.jpg);
+  background-size: cover; 
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: black;
+  color: rgb(224, 90, 12);
+  font-size: 20px;
+  border-radius: 30px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  height: 40px;
+}
+nav ul li {
+   padding: 12px;
+  
+}
+.brand img {
+  width: 40px;
+  border-radius: 30px;
+  padding: 0 8px;
+  
+}
+.brand {
+ display: flex;
+ align-items: center;
+ font-weight: bolder;
+ font-size: 1.3rem;
+ text-shadow: 1px 1px 3px rgb(250, 249, 246);
+    
+}
+.container {
+  
+  min-height: 70vh;
+  background: url(cover1.jpg);
+  background-size: cover;
+  width: 60vw;
+  margin: 5px auto;
+  padding: 20px;
+  color: rgb(224, 90, 12);
+  border-radius: 10px;
+  box-shadow: 10px 10px 12px orange;
+  text-shadow: 1px 1px 3px rgb(250, 249, 246);
+}
+.bottom{
+    position: sticky;
+    height: 90px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icons{
+    margin-top: 16px;
+    
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressbar{
+    width: 110vh;
+    cursor: pointer;
+
+}
+.songitem{
+    height: 30px;
+    display: flex;
+    width: 50%;
+    margin: 12px 0;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid orange;
+    border-radius: 34px;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 3px rgb(243, 9, 9);
+}
+.songitem i{
+    cursor: pointer;
+}
+.songinfo{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.songinfo img{
+    width: 110vh;
+    height: 12vh;
+    opacity: 0;
+    transition: opacity 0.6s ease-in ;
+}
