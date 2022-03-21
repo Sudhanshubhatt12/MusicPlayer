@@ -40,8 +40,7 @@ masterPlay.addEventListener("click", () => {
     masterPlay.classList.remove("fa-circle-play");
     masterPlay.classList.add("fa-circle-pause");
     gif.style.opacity = 1;
-  }
-   else {
+  } else {
     audioElement.pause();
     masterPlay.classList.remove("fa-circle-pause");
     masterPlay.classList.add("fa-circle-play");
@@ -50,11 +49,12 @@ masterPlay.addEventListener("click", () => {
 });
 //Listen to events
 audioElement.addEventListener("timeupdate", () => {
-  progress = parseInt((audioElement.currentTime/audioElement.duration)* 100);
+  progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
   myProgressbar.value = progress;
 });
 myProgressbar.addEventListener("change", () => {
-  audioElement.currentTime = myProgressbar.value * audioElement.duration/ 100;
+  audioElement.currentTime =
+    (myProgressbar.value * audioElement.duration) / 100;
 });
 const makeallplay = () => {
   Array.from(document.getElementsByClassName("songitemplay")).forEach(
@@ -71,7 +71,7 @@ Array.from(document.getElementsByClassName("songitemplay")).forEach(
       songIndex = parseInt(e.target.id);
       e.target.classList.remove("fa-circle-play");
       e.target.classList.add("fa-circle-pause");
-      audioElement.src = `songs/${songIndex+1}.mp3`;
+      audioElement.src = `songs/${songIndex + 1}.mp3`;
       audioElement.currentTime = 0;
       audioElement.play();
       masterPlay.classList.remove("fa-circle-play");
@@ -79,30 +79,27 @@ Array.from(document.getElementsByClassName("songitemplay")).forEach(
     });
   }
 );
-document.getElementById('next').addEventListener('click', ()=>{
-  if(songIndex>=6){
-      songIndex = 0
+document.getElementById("next").addEventListener("click", () => {
+  if (songIndex >= 6) {
+    songIndex = 0;
+  } else {
+    songIndex += 1;
   }
-  else{
-      songIndex += 1;
-  }
-  audioElement.src = `songs/${songIndex+1}.mp3`;
+  audioElement.src = `songs/${songIndex + 1}.mp3`;
   audioElement.currentTime = 0;
   audioElement.play();
-    masterPlay.classList.remove('fa-circle-play');
-  masterPlay.classList.add('fa-circle-pause');
-
-})
-document.getElementById('previous').addEventListener('click', ()=>{
-  if(songIndex<=0){
-      songIndex = 0
+  masterPlay.classList.remove("fa-circle-play");
+  masterPlay.classList.add("fa-circle-pause");
+});
+document.getElementById("previous").addEventListener("click", () => {
+  if (songIndex <= 0) {
+    songIndex = 0;
+  } else {
+    songIndex -= 1;
   }
-  else{
-      songIndex -= 1;
-  }
-  audioElement.src = `songs/${songIndex+1}.mp3`;
+  audioElement.src = `songs/${songIndex + 1}.mp3`;
   audioElement.currentTime = 0;
   audioElement.play();
-  masterPlay.classList.remove('fa-circle-play');
-  masterPlay.classList.add('fa-circle-pause');
-})
+  masterPlay.classList.remove("fa-circle-play");
+  masterPlay.classList.add("fa-circle-pause");
+});
