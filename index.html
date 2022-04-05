@@ -1,75 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudhanshu Music Plyer</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sudhanshu Music Plyer</title>
-  <link rel="stylesheet" href="index.css" />
-</head>
-
-<body>
-  <nav>
-    <ul>
-      <li class="brand"><img src="logo.png" alt="Music" />SBHATT Music</li>
-      <li>Home</li>
-      <li>About</li>
-    </ul>
-  </nav>
-  <div class="container">
-    <div class="songlist">
-      <h1>Best of Music</h1>
-      <div class="songitem">
-        <span class="songname"> Alan Walker - Faded.mp3</span><span>
-          <i id="0" class="fa-solid songitemplay fa-circle-play"></i></span>
+  <body>
+    <div class="overall">
+      <nav>
+        <ul>
+          <li class="brand"><img src="logo.png" alt="Music" /></li>
+          <li class="braand"><img src="mylogo.png" alt="img" /></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="songlist">
+          <h1>Best of Music</h1>
+          <div class="songitem">
+            <span class="songname"> Alan Walker - Faded.mp3</span
+            ><span>
+              <i id="0" class="fa-solid songitemplay fa-circle-play"></i
+            ></span>
+          </div>
+          <br />
+          <div class="songitem">
+            <span class="songname">B PRAAK .mp3</span
+            ><span>
+              <i id="1" class="fa-solid songitemplay fa-circle-play"></i
+            ></span>
+          </div>
+          <br />
+          <div class="songitem">
+            <span class="songname">Christina Perri - A Thousand Years .mp3</span
+            ><span>
+              <i id="2" id="0" class="fa-solid songitemplay fa-circle-play"></i
+            ></span>
+          </div>
+          <br />
+          <div class="songitem">
+            <span class="songname">DJ Snake - Taki Taki.mp3</span
+            ><span>
+              <i id="3" class="fa-solid songitemplay fa-circle-play"></i
+            ></span>
+          </div>
+          <br />
+          <div class="songitem">
+            <span class="songname">Ed Sheeran - Perfect.mp3</span
+            ><span>
+              <i id="4" class="fa-solid songitemplay fa-circle-play"></i
+            ></span>
+          </div>
+          <br />
+          <div class="songitem">
+            <span class="songname">Love Me Like You Do.mp3</span
+            ><span>
+              <i id="5" class="fa-solid songitemplay fa-circle-play"></i
+            ></span>
+          </div>
+          <br />
+          <div class="songitem">
+            <span class="songname">Mitti Di Khushboo.mp3</span
+            ><span>
+              <i id="6" class="fa-solid songitemplay fa-circle-play"></i
+            ></span>
+          </div>
+        </div>
       </div>
-      <br />
-      <div class="songitem">
-        <span class="songname">B PRAAK .mp3</span><span>
-          <i id="1" class="fa-solid songitemplay fa-circle-play"></i></span>
-      </div>
-      <br />
-      <div class="songitem">
-        <span class="songname">Christina Perri - A Thousand Years .mp3</span><span>
-          <i id="2" id="0" class="fa-solid songitemplay fa-circle-play"></i></span>
-      </div>
-      <br />
-      <div class="songitem">
-        <span class="songname">DJ Snake - Taki Taki.mp3</span><span>
-          <i id="3" class="fa-solid songitemplay fa-circle-play"></i></span>
-      </div>
-      <br />
-      <div class="songitem">
-        <span class="songname">Ed Sheeran - Perfect.mp3</span><span>
-          <i id="4" class="fa-solid songitemplay fa-circle-play"></i></span>
-      </div>
-      <br />
-      <div class="songitem">
-        <span class="songname">Love Me Like You Do.mp3</span><span>
-          <i id="5" class="fa-solid songitemplay fa-circle-play"></i></span>
-      </div>
-      <br />
-      <div class="songitem">
-        <span class="songname">Mitti Di Khushboo.mp3</span><span>
-          <i id="6" class="fa-solid songitemplay fa-circle-play"></i></span>
+      <div class="bottom">
+        <input
+          type="range"
+          name="range"
+          id="myProgressbar"
+          min="0"
+          value="0"
+          max="100"
+        />
+        <div class="icons">
+          <!-- fontawsomeicon -->
+          <i id="previous" class="fa-solid fa-3x fa-backward"></i>
+          <i class="fa-solid fa-3x fa-circle-play" id="masterPlay"></i>
+          <i id="next" class="fa-solid fa-3x fa-forward"></i>
+        </div>
       </div>
     </div>
-    <div class="songinfo">
-      <img src="playing.gif" alt="gif" id="gif" />
-    </div>
-  </div>
-  <div class="bottom">
-    <input type="range" name="range" id="myProgressbar" min="0" value="0" max="100" />
-    <div class="icons">
-      <!-- fontawsomeicon -->
-      <i id="previous" class="fa-solid  fa-3x fa-backward"></i>
-      <i  class="fa-solid  fa-3x fa-circle-play" id="masterPlay"></i>
-      <i id="next" class="fa-solid  fa-3x fa-forward"></i>
-    </div>
-  </div>
-  <script src="https://kit.fontawesome.com/7dd65d537c.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/7dd65d537c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>
