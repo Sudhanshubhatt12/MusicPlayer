@@ -106,15 +106,15 @@ nav ul {
     width: 48vh;
  }
 }
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 720px){
   .overall{
-    width: 110%;
+    width: 100%;
   }
   nav{
     height: 5rem;
   }
   .container{
-    height: 78vh;
+    height: 64vh;
   }
   .braand img {
     height: 4rem;
@@ -131,5 +131,7 @@ nav ul {
 }
 .songitem{
   font-size: 1rem;
+  top: 1rem;
+  margin: 1px 0;
 }
 }
